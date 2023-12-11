@@ -1,0 +1,62 @@
+package:
+  name: try-array-members
+  dependencies:
+    - aff
+    - catenable-lists
+    - console
+    - debug
+    - deku
+    - deku-core
+    - deku-dom
+    - effect
+    - foreign
+    - prelude
+    - random
+    - record
+    - stringutils
+    - web-pointerevents
+    - web-touchevents
+  test:
+    main: Test.Main
+    dependencies: []
+workspace:
+  package_set:
+    registry: 47.5.1
+  extra_packages:
+    hyrule:
+      git: "https://github.com/mikesol/purescript-hyrule.git"
+      # ref: "f388528a9aaa25a5307bf67f6ed12d2097620929"
+      ref: "04bd881f7c16c11d74cf978f43288d16e4d56085"
+      dependencies:
+        - effect
+        - filterable
+        - js-timers
+        - unsafe-reference
+        - web-html
+        - web-uievents
+    bolson:
+      git: "https://github.com/mikesol/purescript-bolson.git"
+      ref: "d87900ceedfb81814bd282be464fa4c8a55677c2"
+      dependencies:
+        - hyrule
+        - fast-vect
+        - foreign
+        - foreign-object
+    deku:
+      git: "https://github.com/mikesol/purescript-deku.git"
+      subdir: deku
+      ref: "1510c177cc3d7f0f28be8c799a4e087b1303da7e" # "22d4756f831ac57c17286bae86a5799a0377239a"
+      dependencies:
+        - bolson
+    deku-core:
+      git: "https://github.com/mikesol/purescript-deku.git"
+      subdir: deku-core
+      ref: "1510c177cc3d7f0f28be8c799a4e087b1303da7e" # "22d4756f831ac57c17286bae86a5799a0377239a"
+      dependencies:
+        - bolson
+    deku-dom:
+      git: "https://github.com/mikesol/purescript-deku.git"
+      subdir: deku-dom
+      ref: "1510c177cc3d7f0f28be8c799a4e087b1303da7e" # "22d4756f831ac57c17286bae86a5799a0377239a"
+      dependencies:
+        - bolson

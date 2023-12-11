@@ -1,0 +1,34 @@
+{
+  "name": "try-array-members",
+  "version": "0.0.1",
+  "description": "Test pushing array members one by one",
+  "main": "index.js",
+  "scripts": {
+    "build:spago": "spago build",
+    "build:vite": "vite build",
+    "build": "npm run build:spago && npm run build:vite",
+    "dev": "vite",
+    "postinstall": "spago build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuratOzsoyler/try-array-members.git"
+  },
+  "keywords": [
+    "purescript",
+    "deku",
+    "hyrule"
+  ],
+  "author": "Murat Özsöyler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuratOzsoyler/try-array-members/issues"
+  },
+  "homepage": "https://github.com/MuratOzsoyler/try-array-members#readme",
+  "devDependencies": {
+    "purescript": "^0.15.13",
+    "spago": "^0.93.21",
+    "vite": "^5.0.7"
+  }
+}
