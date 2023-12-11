@@ -17,7 +17,7 @@ import Deku.DOM as D
 import Deku.DOM.Listeners as DL
 import Deku.Do as Deku
 import Deku.Effect as DE
-import Deku.Hooks (useDyn, useState, useState', (<#~>))
+import Deku.Hooks (useDyn, useState', (<#~>))
 import Deku.Toplevel (runInBody)
 import Effect (Effect)
 import Effect.Aff (Milliseconds(..), delay, launchAff_)
